@@ -28,4 +28,18 @@ public class Teacher implements Cloneable{
 	public String toString() {
 		return "Teacher [name=" + name + ", couse=" + couse + "]";
 	}
+	
+	@Override
+	protected Teacher clone(){
+		Teacher teacher=null;
+		if(teacher==null){
+			try {
+				teacher=(Teacher) super.clone();
+			} catch (CloneNotSupportedException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return teacher;
+	}
 }

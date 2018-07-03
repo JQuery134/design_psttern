@@ -13,7 +13,7 @@ public class Main {
 		clone.setName("李四");
 		clone.setAge(45);
 		clone.setTeacher(teacher2);
-		System.out.println(clone);
+		System.out.println(clone==s1);
 		
 		
 	}
